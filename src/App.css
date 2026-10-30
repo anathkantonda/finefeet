@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+:root {
+  --main-blue: #253447;
+  --main-green: #80bc29;
+}
+
+.highlights {
+
+  p {
+  opacity: 100% !important;
+  }
+
+  .shadow-md {
+    box-shadow: 3px 3px 5px var(--main-green);
+  }
+}
