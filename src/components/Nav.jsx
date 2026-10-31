@@ -1,25 +1,45 @@
+
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import '../App.css'
 
 const Nav = () => {
-  return (
-    <nav className="fixed absolute w-[100%] flex justify-between place-items-center px-16 py-4 bg-white z-1000">
-        <div className="logo">
-            <img src={logo} alt="logo" className="w-20 h-20"/>
-        </div>
+    return (
+        <nav className="sticky top-0 w-full flex justify-between items-center px-6 md:px-16 py-3 bg-white z-50 shadow-sm">
 
-        <div className="links">
-            <ul className="flex gap-6 text-xl text-[var(--main-blue)] place-items-center cursor-pointer">
-                <li>Home</li>
-                <li><a href="#about-us">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li className="bg-[var(--main-blue)] text-white p-2 rounded-lg text-lg">Contact Us</li>
-            </ul>
-        </div>
-    </nav>
-  )
+            <div className="logo">
+                <Link to="/">
+                    <img src={logo} alt="FineFeet logo" className="w-16 h-16" />
+                </Link>
+            </div>
+
+            <div className="links">
+                <ul className="flex gap-4 md:gap-6 text-base md:text-lg text-[var(--main-blue)] items-center cursor-pointer">
+
+                    <li>
+                        <a href="/#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/#about-us">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/#services">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact" className="bg-[var(--main-blue)] text-white px-4 py-3 rounded-lg">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    )
 }
 
 export default Nav
