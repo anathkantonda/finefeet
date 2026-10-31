@@ -1,12 +1,13 @@
 
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import '../App.css'
 
 const ContactUs = () => {
   return (
     <>
+      {/* NAVIGATION */}
       <nav className="sticky top-0 w-full flex justify-between items-center px-6 md:px-16 py-3 bg-white z-50 shadow-sm">
 
         <div className="logo">
@@ -19,46 +20,39 @@ const ContactUs = () => {
           <ul className="flex gap-4 md:gap-6 text-base md:text-lg text-[var(--main-blue)] items-center cursor-pointer">
 
             <li>
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[var(--main-green)] underline underline-offset-8 decoration-2"
-                    : "hover:text-[var(--main-green)]"
-                }
-              >
+              <Link to="/" className="hover:text-[var(--main-green)]">
                 Home
-              </NavLink>
+              </Link>
             </li>
 
             <li>
-              <a href="/#about-us" className="hover:text-[var(--main-green)]">
+              <Link to="/#about-us" className="hover:text-[var(--main-green)]">
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="/#services" className="hover:text-[var(--main-green)]">
+              <Link to="/#services" className="hover:text-[var(--main-green)]">
                 Services
-              </a>
+              </Link>
             </li>
 
             <li>
-              <Link to="/contact" className="bg-[var(--main-blue)] text-white px-4 py-3 rounded-lg hover:bg-[var(--main-green)] hover:text-black">
+              <Link
+                to="/contact"
+                className="bg-[var(--main-blue)] text-white px-4 py-3 rounded-lg hover:bg-[var(--main-green)] hover:text-black"
+              >
                 Contact Us
               </Link>
             </li>
 
           </ul>
         </div>
-
       </nav>
 
       <div className="min-h-screen bg-[#F7F8F5]">
 
         {/* CONTACT HEADER */}
-
         <section className="bg-[var(--main-blue)] text-white text-center py-20 px-6">
 
           <p className="text-[var(--main-green)] font-bold pb-3">
@@ -76,15 +70,12 @@ const ContactUs = () => {
 
         </section>
 
-
         {/* CONTACT CONTENT */}
-
         <section className="max-w-6xl mx-auto px-6 py-20">
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
             {/* CONTACT INFORMATION */}
-
             <div className="text-[var(--main-blue)]">
 
               <h2 className="text-3xl font-bold pb-6">
@@ -131,12 +122,9 @@ const ContactUs = () => {
                 </div>
 
               </div>
-
             </div>
 
-
             {/* CONTACT FORM */}
-
             <div className="bg-white p-8 rounded-2xl shadow-sm">
 
               <h2 className="text-2xl font-bold text-[var(--main-blue)] pb-6">
@@ -180,9 +168,7 @@ const ContactUs = () => {
                     className="select select-bordered w-full"
                     defaultValue=""
                   >
-                    <option value="" disabled>
-                      Select a subject
-                    </option>
+                    <option value="" disabled>Select a subject</option>
                     <option value="appointment">Book an appointment</option>
                     <option value="general">General enquiry</option>
                     <option value="service">Service enquiry</option>
@@ -207,22 +193,16 @@ const ContactUs = () => {
                 </button>
 
               </form>
-
             </div>
 
           </div>
-
         </section>
 
-
         {/* FOOTER */}
-
         <footer className="bg-[var(--main-blue)] text-white text-center py-8">
-
           <p>
             Copyright © FineFeet Podiatry Clinic. All Rights Reserved.
           </p>
-
         </footer>
 
       </div>

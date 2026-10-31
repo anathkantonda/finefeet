@@ -29,11 +29,12 @@ const Nav = () => {
                         <a href="/#services">Services</a>
                     </li>
 
-                    <li>
-                        <a href="/contact" className="bg-[var(--main-blue)] text-white px-4 py-3 rounded-lg">
-                            Contact Us
-                        </a>
-                    </li>
+                    <Link
+                        to="/contact"
+                        className="bg-[var(--main-blue)] text-white px-4 py-3 rounded-lg"
+                    >
+                        Contact Us
+                    </Link>
 
                 </ul>
             </div>
