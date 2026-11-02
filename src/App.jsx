@@ -8,13 +8,10 @@ import ContactUs from './components/ContactUs'
 import './App.css'
 
 import checkup from './assets/checkup.jpg'
-import footsurgery from './assets/pd8.jpg'
+import footsurgery from './assets/footsurgery.jpg'
 import logofooter from './assets/logo-dark.png'
 
 import services from './data/services.json'
-
-
-// HOMEPAGE COMPONENT
 
 const Home = () => {
 
@@ -362,15 +359,11 @@ const Home = () => {
   )
 }
 
-
-
-// MAIN APP COMPONENT
-
 const App = () => {
 
   const location = useLocation()
 
-  // Handle scrolling when navigating to a homepage section
+  // scrolling to section on homepage
 
   useEffect(() => {
 
