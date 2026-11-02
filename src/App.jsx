@@ -7,8 +7,8 @@ import ContactUs from './components/ContactUs'
 
 import './App.css'
 
-import checkup from './assets/checkup.jpg'
-import footsurgery from './assets/footsurgery.jpg'
+import checkup from '/images/checkup.jpg'
+import footsurgery from '/images/footsurgery.jpg'
 import logofooter from './assets/logo-dark.png'
 
 import services from './data/services.json'
@@ -239,32 +239,22 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {services.map((service, index) => (
+              <div key={index} className="card bg-white shadow-sm text-[var(--main-blue)]">
 
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-              >
+                <figure>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-48 object-cover"
+                  />
+                </figure>
 
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-52 object-cover"
-                />
-
-                <div className="p-5">
-
-                  <h3 className="text-xl font-bold text-[var(--main-blue)] pb-2">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-
+                <div className="card-body">
+                  <h3 className="card-title">{service.title}</h3>
+                  <p>{service.description}</p>
                 </div>
 
               </div>
-
             ))}
 
           </div>

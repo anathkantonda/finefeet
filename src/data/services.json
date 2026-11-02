@@ -1,32 +1,31 @@
-
 [
   {
-    "image": "/src/assets/general-podiatry.jpeg",
+    "image": "../images/general-podiatry.jpeg",
     "title": "General Podiatry",
     "description": "Comprehensive foot assessments, routine foot care and treatment to help maintain healthy feet and prevent common foot problems."
   },
   {
-    "image": "/src/assets/nail-care.jpeg",
+    "image": "../images/nail-care.jpeg",
     "title": "Nail Care & Treatment",
     "description": "Professional treatment for ingrown toenails, thickened nails, fungal nail concerns and other nail-related conditions."
   },
   {
-    "image": "/src/assets/cornandcallus.jpeg",
+    "image": "../images/cornandcallus.jpeg",
     "title": "Corn & Callus Treatment",
     "description": "Safe removal and management of corns and calluses to relieve discomfort, reduce pressure and restore foot comfort."
   },
   {
-    "image": "/src/assets/biomechanical.jpeg",
+    "image": "../images/biomechanical.jpeg",
     "title": "Biomechanical Assessments",
     "description": "Assessment of how your feet, ankles and lower limbs move to identify problems that may contribute to pain or discomfort."
   },
   {
-    "image": "/src/assets/custom.jpeg",
+    "image": "../images/custom.jpeg",
     "title": "Custom Orthotics",
     "description": "Personalised foot support solutions designed to improve alignment, distribute pressure and support comfortable movement."
   },
   {
-    "image": "/src/assets/footcare.jpeg",
+    "image": "../images/footcare.jpeg",
     "title": "Diabetic Foot Care",
     "description": "Preventative foot assessments and ongoing care to help identify potential complications and maintain foot health for people living with diabetes."
   }
