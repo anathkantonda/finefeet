@@ -18,15 +18,15 @@ const Nav = () => {
                 <ul className="flex gap-4 md:gap-6 text-base md:text-lg text-[var(--main-blue)] items-center cursor-pointer">
 
                     <li>
-                        <a href="/#home">Home</a>
+                        <a href="/#home" className="hover:text-[var(--main-green)]">Home</a>
                     </li>
 
                     <li>
-                        <a href="/#about-us">About</a>
+                        <a href="/#about-us" className="hover:text-[var(--main-green)]">About</a>
                     </li>
 
                     <li>
-                        <a href="/#services">Services</a>
+                        <a href="/#services" className="hover:text-[var(--main-green)]">Services</a>
                     </li>
 
                     <Link
